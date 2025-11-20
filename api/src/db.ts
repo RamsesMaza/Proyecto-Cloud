@@ -10,7 +10,7 @@ dotenv.config();
 export const pool = mysql.createPool({
   host: process.env.DB_HOST,       // <--- Azure rellenará esto con lo que pusiste en el Lugar 1
   user: process.env.DB_USER,       // <--- Azure pondrá 'Mikuy'
-  password: process.env.DB_PASS,   // <--- Azure pondrá tu contraseña
+  password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   port: 3306,
   ssl: {
