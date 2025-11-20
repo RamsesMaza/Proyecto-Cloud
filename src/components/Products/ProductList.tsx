@@ -192,9 +192,8 @@ const ProductList: React.FC = () => {
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-gray-600">Precio:</span>
-                  <span className="font-medium text-gray-900">S/ {(typeof product.price === 'number' ? product.price : parseFloat(product.price)).toFixed(2)}</span>
+                  <span className="font-medium text-gray-900"> S/ {Number(product.price).toFixed(2)}</span>
                 </div>
-
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-gray-600">Stock:</span>
                   <div className="flex items-center space-x-2">
